@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model User
+
+<img src="~/MIREA_Gerb_Colour.png" height="100px" width="100px"/>
+<form method="post" asp-action="login" asp-controller="Home">
+
+    <label asp-for="Login"></label>
+    <input type="text" asp-for="Login" />
+    <label asp-for="Password"></label>
+    <input type="password" asp-for="Password" />
+    <button type="submit">Войти</button>
+
+</form>
